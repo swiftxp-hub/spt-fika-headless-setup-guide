@@ -16,7 +16,7 @@ $filesToDelete = @(
 # ================================
 # Get current execution directory
 # ================================
-$ExecutionDir = Get-Location
+$ExecutionDir = $PSScriptRoot
 
 Write-Host ('Searching in: ' + $ExecutionDir) -ForegroundColor Cyan
 
