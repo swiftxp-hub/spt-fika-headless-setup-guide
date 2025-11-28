@@ -60,15 +60,16 @@ Beispiel (Windows → Linux):
 ## 4️⃣ Docker/Podman-Container starten
 
 Wichtig: Die PROFILE_ID unbedingt durch eure zugewiesene ID ersetzen.
+         Die richtige SERVER_URL eintragen.
 
 ### Docker
 ```
-docker run -d --name fika-headless --restart unless-stopped --mount type=volume,source=fika-headless,target=/opt/tarkov -e PROFILE_ID=69235752f1416142c79825ec -e SERVER_URL=91.214.190.220 -e SERVER_PORT=6969 -e ENABLE_LOG_PURGE=true -e AUTO_RESTART_ON_RAID_END=false -p 25565:25565/udp ghcr.io/zhliau/fika-headless-docker:latest
+docker run -d --name fika-headless --restart unless-stopped --mount type=volume,source=fika-headless,target=/opt/tarkov -e PROFILE_ID=69235752f1416142c79825ec -e SERVER_URL=1.1.1.1 -e SERVER_PORT=6969 -e ENABLE_LOG_PURGE=true -e AUTO_RESTART_ON_RAID_END=false -p 25565:25565/udp ghcr.io/zhliau/fika-headless-docker:latest
 ```
 
 ### Podman
 ```
-podman run -d --name fika-headless --restart unless-stopped --mount type=volume,source=fika-headless,target=/opt/tarkov -e PROFILE_ID=69235752f1416142c79825ec -e SERVER_URL=91.214.190.220 -e SERVER_PORT=6969 -e ENABLE_LOG_PURGE=true -e AUTO_RESTART_ON_RAID_END=false -p 25565:25565/udp ghcr.io/zhliau/fika-headless-docker:latest
+podman run -d --name fika-headless --restart unless-stopped --mount type=volume,source=fika-headless,target=/opt/tarkov -e PROFILE_ID=69235752f1416142c79825ec -e SERVER_URL=1.1.1.1 -e SERVER_PORT=6969 -e ENABLE_LOG_PURGE=true -e AUTO_RESTART_ON_RAID_END=false -p 25565:25565/udp ghcr.io/zhliau/fika-headless-docker:latest
 ```
 
 ---
