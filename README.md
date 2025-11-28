@@ -17,11 +17,15 @@ Diese Anleitung beschreibt, wie ihr den Fika-Headless-Client vorbereitet und ans
 4. Diese frische Installation mindestens einmal ausführen.  
 Ergo "SPT.Server" starten und das Spiel mit dem "SPT.Launcher" starten bis ins Hauptmenü.
 
-5. Die Datei "swiftxp-prepare-fika-headless.ps1" in das Verzeichnis kopieren und anschließend per PowerShell ausführen.
+5. Die Datei "swiftxp-prepare-fika-headless.ps1" in das Verzeichnis kopieren und anschließend per PowerShell ausführen.  
+   Das Script ist nicht signed. Einfachste Möglichkeit es auszuführen per CMD:  
+   ```
+   C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\FikaHeadless\swiftxp-prepare-fika-headless.ps1
+   ```
 
-6. Die Datei "swiftxp-prepare-fika-headless.ps1" danach wieder löschen.
+7. Die Datei "swiftxp-prepare-fika-headless.ps1" danach wieder löschen.
 
-7. Den Inhalt von "fika-headless-setup.7z" in das Verzeichnis extrahieren.
+8. Den Inhalt von "fika-headless-setup.7z" in das Verzeichnis extrahieren.
 
 ---
 
